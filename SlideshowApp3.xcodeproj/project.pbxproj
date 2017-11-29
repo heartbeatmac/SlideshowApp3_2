@@ -17,7 +17,7 @@
 		5A12832A1FCD14E400288A82 /* picture003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A1283251FCD14E400288A82 /* picture003.jpg */; };
 		5A12832B1FCD14E400288A82 /* picture004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A1283261FCD14E400288A82 /* picture004.jpg */; };
 		5A12832C1FCD14E400288A82 /* picture005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A1283271FCD14E400288A82 /* picture005.jpg */; };
-		5A12832E1FCD6E4600288A82 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12832D1FCD6E4600288A82 /* ResultViewController.swift */; };
+		5ADB13C51FCECB1B006EEAFE /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB13C41FCECB1B006EEAFE /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		5A1283251FCD14E400288A82 /* picture003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture003.jpg; sourceTree = "<group>"; };
 		5A1283261FCD14E400288A82 /* picture004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture004.jpg; sourceTree = "<group>"; };
 		5A1283271FCD14E400288A82 /* picture005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture005.jpg; sourceTree = "<group>"; };
-		5A12832D1FCD6E4600288A82 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		5ADB13C41FCECB1B006EEAFE /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,6 @@
 		5A1283051FCD134E00288A82 = {
 			isa = PBXGroup;
 			children = (
-				5A12832D1FCD6E4600288A82 /* ResultViewController.swift */,
 				5A1283101FCD134E00288A82 /* SlideshowApp3 */,
 				5A12830F1FCD134E00288A82 /* Products */,
 			);
@@ -78,6 +77,7 @@
 				5A1283181FCD134E00288A82 /* Assets.xcassets */,
 				5A12831A1FCD134E00288A82 /* LaunchScreen.storyboard */,
 				5A12831D1FCD134E00288A82 /* Info.plist */,
+				5ADB13C41FCECB1B006EEAFE /* ResultViewController.swift */,
 			);
 			path = SlideshowApp3;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 			files = (
 				5A1283141FCD134E00288A82 /* ViewController.swift in Sources */,
 				5A1283121FCD134E00288A82 /* AppDelegate.swift in Sources */,
-				5A12832E1FCD6E4600288A82 /* ResultViewController.swift in Sources */,
+				5ADB13C51FCECB1B006EEAFE /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +326,7 @@
 				5A1283221FCD134E00288A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
