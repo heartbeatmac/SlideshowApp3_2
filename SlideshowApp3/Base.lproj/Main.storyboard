@@ -92,7 +92,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3.75" y="132.04225352112675"/>
+            <point key="canvasLocation" x="81" y="132"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="j2t-XR-O3O">

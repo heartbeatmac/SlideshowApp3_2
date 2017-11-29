@@ -12,6 +12,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        
+        
+        self.forwardButton.isEnabled = true
+        self.rewindButton.isEnabled = true
+  
+        
+        
     }
     
     /// 一定の間隔で処理を行うためのタイマー
