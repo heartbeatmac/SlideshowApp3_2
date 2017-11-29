@@ -13,11 +13,12 @@ class ViewController: UIViewController {
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
         
-        
+        // Segue部分:戻った時に「進む」「戻る」の両ボタンを有効化する
         self.forwardButton.isEnabled = true
         self.rewindButton.isEnabled = true
-  
         
+        // Segue部分:戻った時に「停止」から「再生」にボタン名称を戻す
+        startStopButton.setTitle("再生", for: .normal)
         
     }
     
@@ -64,8 +65,12 @@ class ViewController: UIViewController {
         
     }
     
-    @IBOutlet weak var forwardButton: UIButton!
+    // 再生、停止のボタン名称切り替えに使用
+    @IBOutlet weak var startStopButton: UIButton!
     
+    // 進むボタンの状態を確認するための登録
+    @IBOutlet weak var forwardButton: UIButton!
+    // 戻るボタンの状態を確認するための登録   
     @IBOutlet weak var rewindButton: UIButton!
     
     
@@ -73,8 +78,11 @@ class ViewController: UIViewController {
         
         if self.timer == nil {
             
+            // スライドショー中は「進む」「戻る」の両ボタンを無効化する
             self.forwardButton.isEnabled = false
             self.rewindButton.isEnabled = false
+            
+            startStopButton.setTitle("停止", for: .normal)
             
             //タイマーを動かす
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self,selector: #selector(updateTimer), userInfo: nil, repeats: true)
@@ -82,8 +90,11 @@ class ViewController: UIViewController {
         }
         else {
             
+            // 停止ボタンのタップで「進む」「戻る」の両ボタンを有効化する
             self.forwardButton.isEnabled = true
             self.rewindButton.isEnabled = true
+            
+            startStopButton.setTitle("再生", for: .normal)
             
             //タイマーを止める
             self.timer?.invalidate()
@@ -133,7 +144,7 @@ class ViewController: UIViewController {
     func displayImage() {
         
         
-          
+        
         // 画像の番号が正常な範囲を指しているかチェック
         
         // 範囲より下を指している場合、最後の画像を表示

@@ -33,11 +33,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-t8-oI2">
-                                <rect key="frame" x="227" y="533" width="67" height="30"/>
+                                <rect key="frame" x="263" y="533" width="31" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NZa-dX-Wxc"/>
                                 </constraints>
-                                <state key="normal" title="再生/停止"/>
+                                <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="playStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aT7-FW-uRd"/>
                                 </connections>
@@ -82,6 +82,7 @@
                         <outlet property="forwardButton" destination="CRF-hI-pfG" id="fKa-2p-6i9"/>
                         <outlet property="imageView" destination="4ZJ-7m-V46" id="EDr-HD-bAc"/>
                         <outlet property="rewindButton" destination="voy-Mh-1dN" id="6u2-cJ-g19"/>
+                        <outlet property="startStopButton" destination="I9J-t8-oI2" id="Nq4-9f-bRx"/>
                         <segue destination="Wtn-Lr-Z85" kind="show" identifier="result" id="qlQ-F0-fsb"/>
                     </connections>
                 </viewController>
